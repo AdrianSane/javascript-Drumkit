@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RiotMind - Beat Machine</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<!--
+  -src:
+    https://javascript30.com/
+    http://keycode.info/
+    http://www.w3schools.com/tags/tag_kbd.asp
+    http://www.htmlgoodies.com/beyond/javascript/article.php/3471141
+    https://wavesurfer-js.org/
+-->
+
+<div class="keys">
+
+<!-- intro -->
+  <div class="intro">
+    <h1>Beat Machine</h1>
+  </div>
+<!-- intro -->
+
+
+<!-- input -->
+  <div class="input">
+    <input type="text" name="beats" placeholder="start">
+  </div>
+<!-- input -->
+
+
+<!-- numbers -->
+  <div data-key="49" class="key">
+    <kbd>1</kbd><!-- defines keyboard input -->
+    <span class="sound">piano</span>
+  </div>
+  <div data-key="50" class="key">
+    <kbd>2</kbd><!-- defines keyboard input -->
+    <span class="sound">piano</span>
+  </div>
+  <div data-key="51" class="key">
+    <kbd>3</kbd><!-- defines keyboard input -->
+    <span class="sound">piano</span>
+  </div>
+  <div data-key="52" class="key">
+    <kbd>4</kbd><!-- defines keyboard input -->
+    <span class="sound">piano</span>
+  </div>
+  <div data-key="53" class="key">
+    <kbd>5</kbd><!-- defines keyboard input -->
+    <span class="sound">piano</span>
+  </div>
+  <div data-key="54" class="key">
+    <kbd>6</kbd><!-- defines keyboard input -->
+    <span class="sound">string</span>
+  </div>
+  <div data-key="55" class="key">
+    <kbd>7</kbd><!-- defines keyboard input -->
+    <span class="sound">string</span>
+  </div>
+  <div data-key="56" class="key">
+    <kbd>8</kbd><!-- defines keyboard input -->
+    <span class="sound">string</span>
+  </div>
+  <div data-key="57" class="key">
+    <kbd>9</kbd><!-- defines keyboard input -->
+    <span class="sound">string</span>
+  </div>
+  <div data-key="48" class="key">
+    <kbd>0</kbd><!-- defines keyboard input -->
+    <span class="sound">string</span>
+  </div>
+<!-- numbers -->
+
+
+<!-- top row -->
+  <div data-key="81" class="key">
+    <kbd>Q</kbd><!-- defines keyboard input -->
+    <span class="sound">synth</span>
+  </div>
+  <div data-key="87" class="key">
+    <kbd>W</kbd><!-- defines keyboard input -->
+    <span class="sound">synth</span>
+  </div>
+  <div data-key="69" class="key">
+    <kbd>E</kbd><!-- defines keyboard input -->
+    <span class="sound">synth</span>
+  </div>
+  <div data-key="82" class="key">
+    <kbd>R</kbd><!-- defines keyboard input -->
+    <span class="sound">synth</span>
+  </div>
+  <div data-key="84" class="key">
+    <kbd>T</kbd><!-- defines keyboard input -->
+    <span class="sound">synth</span>
+  </div>
+  <div data-key="89" class="key">
+    <kbd>Y</kbd><!-- defines keyboard input -->
+    <span class="sound">synth</span>
+  </div>
+  <div data-key="85" class="key">
+    <kbd>U</kbd><!-- defines keyboard input -->
+    <span class="sound">synth</span>
+  </div>
+  <div data-key="73" class="key">
+    <kbd>I</kbd><!-- defines keyboard input -->
+    <span class="sound">synth</span>
+  </div>
+  <div data-key="79" class="key">
+    <kbd>O</kbd><!-- defines keyboard input -->
+    <span class="sound">clap</span>
+  </div>
+  <div data-key="80" class="key">
+    <kbd>P</kbd><!-- defines keyboard input -->
+    <span class="sound">clap</span>
+  </div>
+<!-- top row -->
+
+
+<!-- mid row -->
+  <div data-key="65" class="key">
+    <kbd>A</kbd><!-- defines keyboard input -->
+    <span class="sound">clap</span>
+  </div>
+  <div data-key="83" class="key">
+    <kbd>S</kbd><!-- defines keyboard input -->
+    <span class="sound">hihat</span>
+  </div>
+  <div data-key="68" class="key">
+    <kbd>D</kbd><!-- defines keyboard input -->
+    <span class="sound">kick</span>
+  </div>
+  <div data-key="70" class="key">
+    <kbd>F</kbd><!-- defines keyboard input -->
+    <span class="sound">o-hat</span>
+  </div>
+  <div data-key="71" class="key">
+    <kbd>G</kbd><!-- defines keyboard input -->
+    <span class="sound">boom</span>
+  </div>
+  <div data-key="72" class="key">
+    <kbd>H</kbd><!-- defines keyboard input -->
+    <span class="sound">ride</span>
+  </div>
+  <div data-key="74" class="key">
+    <kbd>J</kbd><!-- defines keyboard input -->
+    <span class="sound">snare</span>
+  </div>
+  <div data-key="75" class="key">
+    <kbd>K</kbd><!-- defines keyboard input -->
+    <span class="sound">tom</span>
+  </div>
+  <div data-key="76" class="key">
+    <kbd>L</kbd><!-- defines keyboard input -->
+    <span class="sound">tink</span>
+  </div>
+<!-- mid row -->
+
+
+<!-- bottom row -->
+  <div data-key="90" class="key">
+    <kbd>Z</kbd><!-- defines keyboard input -->
+    <span class="sound">woah</span>
+  </div>
+  <div data-key="88" class="key">
+    <kbd>X</kbd><!-- defines keyboard input -->
+    <span class="sound">Rick</span>
+  </div>
+  <div data-key="67" class="key">
+    <kbd>C</kbd><!-- defines keyboard input -->
+    <span class="sound">hands</span>
+  </div>
+  <div data-key="86" class="key">
+    <kbd>V</kbd><!-- defines keyboard input -->
+    <span class="sound">denied</span>
+  </div>
+  <div data-key="66" class="key">
+    <kbd>B</kbd><!-- defines keyboard input -->
+    <span class="sound">ay!</span>
+  </div>
+  <div data-key="78" class="key">
+    <kbd>N</kbd><!-- defines keyboard input -->
+    <span class="sound">good</span>
+  </div>
+  <div data-key="77" class="key">
+    <kbd>M</kbd><!-- defines keyboard input -->
+    <span class="sound">damn!</span>
+  </div>
+<!-- bottom row -->
+
+
+<!-- direction -->
+  <div data-key="38" class="key">
+    <kbd>UP</kbd><!-- defines keyboard input -->
+    <span class="sound">laser</span>
+  </div>
+  <div data-key="40" class="key">
+    <kbd>DN</kbd><!-- defines keyboard input -->
+    <span class="sound">horn</span>
+  </div>
+  <div data-key="37" class="key">
+    <kbd>LT</kbd><!-- defines keyboard input -->
+    <span class="sound">alarm</span>
+  </div>
+  <div data-key="39" class="key">
+    <kbd>RT</kbd><!-- defines keyboard input -->
+    <span class="sound">siren</span>
+  </div>
+<!-- direction -->
+
+
+
+</div><!-- / .keys-->
+
+<!-- numbers /strings -->
+  <audio data-key="49" src="sounds/piano1.wav"></audio>
+  <audio data-key="50" src="sounds/piano2.wav"></audio>
+  <audio data-key="51" src="sounds/piano3.wav"></audio>
+  <audio data-key="52" src="sounds/piano4.wav"></audio>
+  <audio data-key="53" src="sounds/piano5.wav"></audio>
+  <audio data-key="54" src="sounds/string1.wav"></audio>
+  <audio data-key="55" src="sounds/string2.wav"></audio>
+  <audio data-key="56" src="sounds/string3.wav"></audio>
+  <audio data-key="57" src="sounds/string4.wav"></audio>
+  <audio data-key="48" src="sounds/string5.wav"></audio>
+<!-- top row /synth -->
+  <audio data-key="81" src="sounds/synth1.wav"></audio>
+  <audio data-key="87" src="sounds/synth2.wav"></audio>
+  <audio data-key="69" src="sounds/synth3.wav"></audio>
+  <audio data-key="82" src="sounds/synth4.wav"></audio>
+  <audio data-key="84" src="sounds/synth5.wav"></audio>
+  <audio data-key="89" src="sounds/synth6.wav"></audio>
+  <audio data-key="85" src="sounds/synth7.wav"></audio>
+  <audio data-key="73" src="sounds/synth8.wav"></audio>
+  <audio data-key="79" src="sounds/clap1.wav"></audio>
+  <audio data-key="80" src="sounds/clap2.wav"></audio>
+<!-- mid row /drums -->
+  <audio data-key="65" src="sounds/clap3.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+<!-- bottom row /voices -->
+  <audio data-key="90" src="sounds/woooah.wav"></audio>
+  <audio data-key="88" src="sounds/bitch.wav"></audio>
+  <audio data-key="67" src="sounds/clapYoHands.mp3"></audio>
+  <audio data-key="86" src="sounds/accessDenied.wav"></audio>
+  <audio data-key="66" src="sounds/ay!.wav"></audio>
+  <audio data-key="78" src="sounds/good2go.mp3"></audio>
+  <audio data-key="77" src="sounds/daaaaamn.mp3"></audio>
+<!-- directional /effects -->
+  <audio data-key="38" src="sounds/laser.wav"></audio>
+  <audio data-key="40" src="sounds/horn.mp3"></audio>
+  <audio data-key="37" src="sounds/alarm.mp3"></audio>
+  <audio data-key="39" src="sounds/siren.wav"></audio>
+
+<!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

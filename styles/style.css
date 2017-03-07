@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+html, body, div, h1, h2, h3, p, a, img, kbd, label, span, audio {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-size: 10px;
+  font-family: sans-serif;
+  line-height: 1;
+}
+body {
+  background: url("../images/mix.jpg") top left no-repeat;
+  background-size: cover;
+	width: 100%;
+	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+h1{
+font-family: 'Pacifico', cursive;
+font-size: 10em;
+}
+.keys {
+  flex: 1;
+  height: 100%;
+  width: 59%;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto;
+}
+.key {
+  border: .2rem solid black;
+  border-radius: .2rem;
+  margin: 1rem;
+  font-size: .5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 5rem;
+	height: 5rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+  float:left;
+}
+.intro{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.record {
+	width:95%;
+}
+.playing {
+  transform: scale(1.05);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+.sound{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+.input{
+	width: 81rem;
+	float: left;
+}
+input[type="text"]{
+	display: block;
+	margin: 0;
+	height: 50px;
+	width: 81rem;
+	font-family: sans-serif;
+	font-size: 5em;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	padding: 10px;
+  border: none;
+  border-bottom: solid 2px #fff;
+  transition: border 0.3s;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+input[type="text"]:focus {
+  outline: none;
+	border-bottom: solid 2px #ffc600;
+}
+
+/* responsive media queries */
+@media screen and (max-width:375px){/* 375px or lower */
+body{
+	background-size: auto;
+}
+.intro{
+width: 606px;
+}
+.input {
+	width: 62rem;
+	margin-bottom: 100px;
+}
+input[type="text"]{
+	width: 60rem;
+}
+.keys{
+	width: 90%;
+	height: 607px;
+	margin: 150px auto;
+	}
+}
+
+@media screen and (max-width:500px){
+body{
+	background-size: auto;
+}
+.input {
+	width: 45rem;
+}
+input[type="text"]{
+	width: 43rem;
+}
+.keys{
+	width: 90%;
+	height: 1060px;
+	}
+}
